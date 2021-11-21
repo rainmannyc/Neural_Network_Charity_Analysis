@@ -21,7 +21,7 @@ The activation layer of choice at the time was linear for the first two hidden l
 
 Unfortunately, the target model performance was not reached with these initial settings and we attempted to optimize the model further.
 
-<img>
+![first_attempt](https://github.com/rainmannyc/Neural_Network_Charity_Analysis/blob/34ecf699e381eecfa3c2b2c8602d1ecf89c7c2f2/Resources/charity_original_attempt.png)
 
 In our first optimization attempt, we keep the activation functions the same, however we added an additional hidden layer also with a linear activation. We increased our neuron count for our first layer to 232 neurons with 116 for the second and 60 for our third hidden layer. Unfortunately, this resulted in our results getting a lower accuracy score of 0.719. 
 
@@ -29,7 +29,7 @@ We then tried optimizing our model by dropping the features we mentioned in the 
 
 On our third and final attempt, we kept the columns dropped, we kept the number of neurons and hidden layers, however we changed all activation to "relu" and our optimizer to "Adamax". On this try we were able to yield a higher score than the original score with a 0.7309, with the loss at approximately the same for all 3 attempts. However, this is still below the target we initially aimed for of 75%. 
 
-<img>
+![third_attempt](https://github.com/rainmannyc/Neural_Network_Charity_Analysis/blob/34ecf699e381eecfa3c2b2c8602d1ecf89c7c2f2/Resources/charity_third_attempt.png)
 
 # Conclusion 
 
